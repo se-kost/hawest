@@ -1,0 +1,4 @@
+name: hawest
+recipe: drupal9
+config:
+  webroot: web/
