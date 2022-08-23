@@ -1,0 +1,20 @@
+uuid: 9fcc5715-14b6-4e90-a154-a1eb3674cfc0
+langcode: en
+status: true
+dependencies:
+  theme:
+    - hawest
+id: tabs
+theme: hawest
+region: content
+weight: -1
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }
