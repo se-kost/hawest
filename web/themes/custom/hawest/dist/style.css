@@ -8,6 +8,34 @@
   --red: #d24942;
   --blue: #4c7cbd; }
 
+@font-face {
+  font-family: "Alberto";
+  src: url("../fonts/Alberto/Aboreto-Regular.ttf"); }
+
 /* line 1, scss/base/typography.scss */
 body {
-  font-size: 100%; }
+  font-size: 100%;
+  font-family: Alberto; }
+
+/* line 1, scss/components/header.scss */
+header {
+  background-color: var(--primary-color); }
+
+/* line 3, scss/components/header.scss */
+header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/* line 9, scss/components/header.scss */
+header > div #block-hawest-site-branding img {
+  max-width: 200px;
+  -webkit-clip-path: circle(45% at 50% 50%);
+  clip-path: circle(45% at 50% 50%);
+  background: var(--white); }
