@@ -1,0 +1,13 @@
+
+/* line 1, scss/base/colors.scss */
+:root {
+  --primary-color: #6cb460;
+  --secondary-color: #fff443;
+  --white: #ffffff;
+  --black: #000000;
+  --red: #d24942;
+  --blue: #4c7cbd; }
+
+/* line 1, scss/base/typography.scss */
+body {
+  font-size: 100%; }

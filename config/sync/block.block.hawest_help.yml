@@ -1,0 +1,22 @@
+uuid: a6f2ea1b-626b-43b1-902b-2cb2c49977f4
+langcode: en
+status: false
+dependencies:
+  module:
+    - help
+  theme:
+    - hawest
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: hawest_help
+theme: hawest
+region: header
+weight: 0
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

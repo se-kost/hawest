@@ -1,0 +1,21 @@
+uuid: e554e4ab-ff4c-4a6f-afac-51c9c826decf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link_type
+    - paragraphs.paragraphs_type.action
+  module:
+    - options
+id: paragraph.action.field_link_type
+field_name: field_link_type
+entity_type: paragraph
+bundle: action
+label: 'Link Type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,22 @@
+uuid: 98790679-ecaa-4370-bcff-768903789f9b
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - hawest
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: hawest_powered
+theme: hawest
+region: header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

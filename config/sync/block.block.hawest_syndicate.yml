@@ -1,0 +1,23 @@
+uuid: f0fff973-9c05-4b57-9c8b-f882f2c64f87
+langcode: en
+status: false
+dependencies:
+  module:
+    - node
+  theme:
+    - hawest
+_core:
+  default_config_hash: 0gq3VPg-_UM69FCCWurLFIrrnIjC2HLKhwo9iQNtcUo
+id: hawest_syndicate
+theme: hawest
+region: header
+weight: 0
+provider: null
+plugin: node_syndicate_block
+settings:
+  id: node_syndicate_block
+  label: 'RSS feed'
+  label_display: '0'
+  provider: node
+  block_count: 10
+visibility: {  }

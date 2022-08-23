@@ -1,0 +1,32 @@
+uuid: ff224236-a6e6-4c2e-bc14-eef5f40a2744
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.action.field_link
+    - field.field.paragraph.action.field_link_type
+    - paragraphs.paragraphs_type.action
+  module:
+    - link
+id: paragraph.action.default
+targetEntityType: paragraph
+bundle: action
+mode: default
+content:
+  field_link:
+    type: link_default
+    weight: 0
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_link_type:
+    type: options_select
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

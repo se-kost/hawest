@@ -1,0 +1,22 @@
+uuid: dc09209e-78c7-49d7-971e-469896c2f1da
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - hawest
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: hawest_content
+theme: hawest
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

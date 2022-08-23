@@ -1,0 +1,22 @@
+uuid: 8d3f489e-b0ca-4d4f-b493-d6b791347cf1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.players
+id: node.players.promote
+field_name: promote
+entity_type: node
+bundle: players
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

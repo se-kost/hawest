@@ -1,5 +1,14 @@
-name: Hawest Theme
+name: Hawest
 type: theme
 description: 'Theme for Hawest Site'
 core_version_requirement: ^8 || ^9
 base theme: false
+logo: logo.png
+
+libraries:
+  - hawest/global-styles
+
+regions:
+  header: Header
+  content: Content
+  footer: Footer
