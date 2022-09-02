@@ -1,0 +1,57 @@
+@import "scss/base/variables";
+
+aside {
+  //background: linear-gradient(45deg, var(--white), var(--white) 25%, var(--primary-color) 25%, var(--primary-color));
+  //background: linear-gradient(-10deg, var(--primary-color), var(--primary-color) 60%, var(--white) 60%, var(--white));
+  background: linear-gradient(-10deg,var(--primary-color),var(--primary-color) 70vh,var(--white) 100vh,var(--white));
+  //background: var(--primary-color);
+
+  &:after {
+    content: '';
+    position: absolute;
+  }
+  > div {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: $default;
+
+    #block-hawest-site-branding {
+      img {
+        max-width: 200px;
+        clip-path: circle(45% at 50% 50%);
+        background: var(--white);
+      }
+    }
+
+    nav {
+      width: 100%;
+      margin-top: 42px;
+
+      > ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+
+        li {
+          list-style: none;
+          padding: 10px 0;
+
+          a {
+            text-decoration: none;
+            color: var(--white);
+            text-transform: uppercase;
+            font-weight: bold;
+
+            &:hover {
+              color: var(--secondary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+}

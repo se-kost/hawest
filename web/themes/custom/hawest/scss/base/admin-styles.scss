@@ -1,0 +1,21 @@
+// Tabs with actions.
+#block-tabs {
+  > ul {
+    display: flex;
+    padding: 0 0 10px;
+    border-bottom: 1px solid black;
+
+    > li {
+      list-style-type: none;
+      padding: 5px 10px;
+      border: 1px solid black;
+      margin: 0 5px;
+
+      > a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }
+}

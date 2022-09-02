@@ -1,0 +1,14 @@
+.layout-wrapper {
+  display: flex;
+
+  > aside {
+    max-width: 300px;
+    height: 100vh;
+    position: fixed;
+  }
+
+  > .page-content {
+    margin-left: 300px;
+    width: 100%;
+  }
+}

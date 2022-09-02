@@ -46,11 +46,13 @@
  */
 #}
 <div class="layout-container">
-  <header>
-    {{ page.header }}
-  </header>
-  <div class="page-content">
-    {{ page.content }}
+  <div class="layout-wrapper">
+    <aside>
+      {{ page.header }}
+    </aside>
+    <div class="page-content">
+      {{ page.content }}
+    </div>
   </div>
   <footer>
     {{ page.footer }}
