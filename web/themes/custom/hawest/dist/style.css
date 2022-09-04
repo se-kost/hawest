@@ -1,4 +1,62 @@
 
+/* line 3, scss/base/admin-styles.scss */
+#block-tabs > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 0 10px;
+  border-bottom: 1px solid black; }
+
+/* line 8, scss/base/admin-styles.scss */
+#block-tabs > ul > li {
+  list-style-type: none;
+  padding: 5px 10px;
+  border: 1px solid black;
+  margin: 0 5px; }
+
+/* line 14, scss/base/admin-styles.scss */
+#block-tabs > ul > li > a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black; }
+
+@font-face {
+  font-family: "Alberto";
+  src: url("../fonts/Alberto/Aboreto-Regular.ttf"); }
+
+/* line 1, scss/base/layouts.scss */
+.layout-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 4, scss/base/layouts.scss */
+.layout-wrapper > aside {
+  max-width: 300px;
+  height: 100vh;
+  position: fixed; }
+
+/* line 10, scss/base/layouts.scss */
+.layout-wrapper > .page-content {
+  margin-left: 300px;
+  width: 100%;
+  padding: 10px; }
+
+/* line 1, scss/base/typography.scss */
+body {
+  font-size: 100%;
+  font-family: Alberto;
+  margin: 0; }
+
+/* line 1, scss/base/variables.scss */
+:root {
+  --primary-color: #6cb460;
+  --secondary-color: #fff443;
+  --white: #ffffff;
+  --black: #000000;
+  --red: #d24942;
+  --blue: #4c7cbd; }
+
 /* line 1, scss/base/variables.scss */
 :root {
   --primary-color: #6cb460;
@@ -73,59 +131,33 @@ aside > div nav > ul li a {
 aside > div nav > ul li a:hover {
   color: var(--secondary-color); }
 
-/* line 3, scss/base/admin-styles.scss */
-#block-tabs > ul {
+/* line 2, scss/content/players.scss */
+.player-full-information .player-header {
+  text-align: center;
+  font-size: 32px; }
+
+/* line 6, scss/content/players.scss */
+.player-full-information .player-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 0 10px;
-  border-bottom: 1px solid black; }
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid var(--primary-color);
+  max-width: 900px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 32px auto;
+  -webkit-box-shadow: 0 0 32px 0 var(--primary-color);
+  box-shadow: 0 0 32px 0 var(--primary-color); }
 
-/* line 8, scss/base/admin-styles.scss */
-#block-tabs > ul > li {
-  list-style-type: none;
-  padding: 5px 10px;
-  border: 1px solid black;
-  margin: 0 5px; }
-
-/* line 14, scss/base/admin-styles.scss */
-#block-tabs > ul > li > a {
-  text-decoration: none;
-  font-weight: bold;
-  color: black; }
-
-@font-face {
-  font-family: "Alberto";
-  src: url("../fonts/Alberto/Aboreto-Regular.ttf"); }
-
-/* line 1, scss/base/layouts.scss */
-.layout-wrapper {
+/* line 17, scss/content/players.scss */
+.player-full-information .player-wrapper .left-column > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 4, scss/base/layouts.scss */
-.layout-wrapper > aside {
-  max-width: 300px;
-  height: 100vh;
-  position: fixed; }
-
-/* line 10, scss/base/layouts.scss */
-.layout-wrapper > .page-content {
-  margin-left: 300px;
+/* line 22, scss/content/players.scss */
+.player-full-information .player-wrapper .right-column {
   width: 100%; }
-
-/* line 1, scss/base/typography.scss */
-body {
-  font-size: 100%;
-  font-family: Alberto;
-  margin: 0; }
-
-/* line 1, scss/base/variables.scss */
-:root {
-  --primary-color: #6cb460;
-  --secondary-color: #fff443;
-  --white: #ffffff;
-  --black: #000000;
-  --red: #d24942;
-  --blue: #4c7cbd; }

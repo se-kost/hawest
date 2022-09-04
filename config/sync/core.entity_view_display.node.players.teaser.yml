@@ -6,10 +6,13 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.players.body
     - field.field.node.players.field_birthday
+    - field.field.node.players.field_height
     - field.field.node.players.field_number
     - field.field.node.players.field_photo
     - field.field.node.players.field_photos
     - field.field.node.players.field_position
+    - field.field.node.players.field_social_networks
+    - field.field.node.players.field_weight
     - node.type.players
   module:
     - text
@@ -34,7 +37,10 @@ content:
     region: content
 hidden:
   field_birthday: true
+  field_height: true
   field_number: true
   field_photo: true
   field_photos: true
   field_position: true
+  field_social_networks: true
+  field_weight: true

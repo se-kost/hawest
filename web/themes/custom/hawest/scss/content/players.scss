@@ -1,0 +1,26 @@
+.player-full-information {
+  .player-header {
+    text-align: center;
+    font-size: 32px;
+  }
+  .player-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid var(--primary-color);
+    max-width: 900px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 32px auto;
+    box-shadow: 0 0 32px 0 var(--primary-color);
+
+    .left-column {
+      > div {
+        display: flex;
+      }
+    }
+
+    .right-column {
+      width: 100%;
+    }
+  }
+}

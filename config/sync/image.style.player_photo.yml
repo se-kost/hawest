@@ -1,0 +1,15 @@
+uuid: 96fdbedd-79df-44fb-985e-e814755c5f92
+langcode: en
+status: true
+dependencies: {  }
+name: player_photo
+label: 'Player Photo'
+effects:
+  684dac6f-19ed-40fc-ba2e-706a6fc9927e:
+    uuid: 684dac6f-19ed-40fc-ba2e-706a6fc9927e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 320
+      anchor: center-center

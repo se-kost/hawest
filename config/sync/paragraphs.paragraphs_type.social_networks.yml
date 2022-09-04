@@ -1,0 +1,10 @@
+uuid: 10b5a966-7120-4547-8218-0b95b62a87a0
+langcode: en
+status: true
+dependencies: {  }
+id: social_networks
+label: 'Social Networks'
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,37 @@
+uuid: 147c2bad-9be1-4e97-b9c8-732d8927c0bc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_networks
+    - node.type.players
+    - paragraphs.paragraphs_type.social_networks
+  module:
+    - entity_reference_revisions
+id: node.players.field_social_networks
+field_name: field_social_networks
+entity_type: node
+bundle: players
+label: 'Social Networks'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      social_networks: social_networks
+    negate: 0
+    target_bundles_drag_drop:
+      action:
+        weight: 4
+        enabled: false
+      hero_banner:
+        weight: 5
+        enabled: false
+      social_networks:
+        weight: 6
+        enabled: true
+field_type: entity_reference_revisions
