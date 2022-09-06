@@ -3,29 +3,46 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.social_networks.field_network
-    - field.field.paragraph.social_networks.field_value
+    - field.field.paragraph.social_networks.field_facebook
+    - field.field.paragraph.social_networks.field_instagram
+    - field.field.paragraph.social_networks.field_phone
+    - field.field.paragraph.social_networks.field_telegram
     - paragraphs.paragraphs_type.social_networks
-  module:
-    - options
 id: paragraph.social_networks.default
 targetEntityType: paragraph
 bundle: social_networks
 mode: default
 content:
-  field_network:
-    type: list_key
-    label: hidden
-    settings: {  }
-    third_party_settings: {  }
-    weight: 0
-    region: content
-  field_value:
+  field_facebook:
     type: string
     label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
     weight: 1
+    region: content
+  field_instagram:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_phone:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_telegram:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
     region: content
 hidden: {  }

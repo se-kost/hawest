@@ -21,8 +21,8 @@
   color: black; }
 
 @font-face {
-  font-family: "Alberto";
-  src: url("../fonts/Alberto/Aboreto-Regular.ttf"); }
+  font-family: "VarelaRound";
+  src: url("../fonts/VarelaRound.ttf"); }
 
 /* line 1, scss/base/layouts.scss */
 .layout-wrapper {
@@ -42,10 +42,11 @@
   width: 100%;
   padding: 10px; }
 
+
 /* line 1, scss/base/typography.scss */
 body {
   font-size: 100%;
-  font-family: Alberto;
+  font-family: VarelaRound;
   margin: 0; }
 
 /* line 1, scss/base/variables.scss */
@@ -70,12 +71,12 @@ body {
 aside {
   background: linear-gradient(-10deg, var(--primary-color), var(--primary-color) 70vh, var(--white) 100vh, var(--white)); }
 
-/* line 9, scss/components/sidebar.scss */
+/* line 6, scss/components/sidebar.scss */
 aside:after {
   content: '';
   position: absolute; }
 
-/* line 13, scss/components/sidebar.scss */
+/* line 10, scss/components/sidebar.scss */
 aside > div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,19 +91,19 @@ aside > div {
   justify-content: center;
   padding: 16px; }
 
-/* line 21, scss/components/sidebar.scss */
+/* line 18, scss/components/sidebar.scss */
 aside > div #block-hawest-site-branding img {
   max-width: 200px;
   -webkit-clip-path: circle(45% at 50% 50%);
   clip-path: circle(45% at 50% 50%);
   background: var(--white); }
 
-/* line 28, scss/components/sidebar.scss */
+/* line 25, scss/components/sidebar.scss */
 aside > div nav {
   width: 100%;
   margin-top: 42px; }
 
-/* line 32, scss/components/sidebar.scss */
+/* line 29, scss/components/sidebar.scss */
 aside > div nav > ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -115,28 +116,28 @@ aside > div nav > ul {
   margin: 0;
   padding: 0; }
 
-/* line 39, scss/components/sidebar.scss */
+/* line 36, scss/components/sidebar.scss */
 aside > div nav > ul li {
   list-style: none;
   padding: 10px 0; }
 
-/* line 43, scss/components/sidebar.scss */
+/* line 40, scss/components/sidebar.scss */
 aside > div nav > ul li a {
   text-decoration: none;
   color: var(--white);
   text-transform: uppercase;
   font-weight: bold; }
 
-/* line 49, scss/components/sidebar.scss */
+/* line 46, scss/components/sidebar.scss */
 aside > div nav > ul li a:hover {
   color: var(--secondary-color); }
 
-/* line 2, scss/content/players.scss */
+/* line 4, scss/content/players.scss */
 .player-full-information .player-header {
   text-align: center;
   font-size: 32px; }
 
-/* line 6, scss/content/players.scss */
+/* line 8, scss/content/players.scss */
 .player-full-information .player-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,12 +153,154 @@ aside > div nav > ul li a:hover {
   -webkit-box-shadow: 0 0 32px 0 var(--primary-color);
   box-shadow: 0 0 32px 0 var(--primary-color); }
 
-/* line 17, scss/content/players.scss */
+/* line 19, scss/content/players.scss */
 .player-full-information .player-wrapper .left-column > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-/* line 22, scss/content/players.scss */
+/* line 24, scss/content/players.scss */
 .player-full-information .player-wrapper .right-column {
   width: 100%; }
+
+/* line 26, scss/content/players.scss */
+.player-full-information .player-wrapper .right-column .player-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 0 18px; }
+
+/* line 32, scss/content/players.scss */
+.player-full-information .player-wrapper .right-column .player-info-wrapper > div:not(:last-child) {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: bold; }
+
+/* line 42, scss/content/players.scss */
+.player-full-information .player-wrapper .right-column .player-info-wrapper .player-birthday:before {
+  content: '';
+  background-image: url("../images/birthday.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 10px; }
+
+/* line 48, scss/content/players.scss */
+.player-full-information .player-wrapper .right-column .player-info-wrapper .player-position:before {
+  content: '';
+  background-image: url("../images/position.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 10px; }
+
+/* line 54, scss/content/players.scss */
+.player-full-information .player-wrapper .right-column .player-info-wrapper .player-weight:before {
+  content: '';
+  background-image: url("../images/weight.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 10px; }
+
+/* line 60, scss/content/players.scss */
+.player-full-information .player-wrapper .right-column .player-info-wrapper .player-height:before {
+  content: '';
+  background-image: url("../images/height.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 10px; }
+
+/* line 65, scss/content/players.scss */
+.player-full-information .player-wrapper .right-column .player-info-wrapper .player-number {
+  position: absolute;
+  font-size: 300px !important;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: var(--primary-color);
+  z-index: -1;
+  opacity: 0.3;
+  margin: 0 !important; }
+
+/* line 2, scss/paragraph/social-networks.scss */
+.paragraph--type--social-networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 32px 0;
+  margin: 0 -10px; }
+
+/* line 7, scss/paragraph/social-networks.scss */
+.paragraph--type--social-networks .social-icon {
+  font-size: 0; }
+
+/* line 10, scss/paragraph/social-networks.scss */
+.paragraph--type--social-networks .social-icon.player-instagram a {
+  background-image: url("../images/instagram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 10px; }
+
+/* line 16, scss/paragraph/social-networks.scss */
+.paragraph--type--social-networks .social-icon.player-facebook a {
+  background-image: url("../images/facebook.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 10px; }
+
+/* line 21, scss/paragraph/social-networks.scss */
+.paragraph--type--social-networks .social-icon.player-telegram a {
+  background-image: url("../images/telegram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 10px; }
+
+/* line 26, scss/paragraph/social-networks.scss */
+.paragraph--type--social-networks .social-icon.player-phone a {
+  background-image: url("../images/phone.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 10px; }

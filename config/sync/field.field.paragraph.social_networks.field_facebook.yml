@@ -1,21 +1,19 @@
-uuid: 01612e92-db18-4f80-ad3e-6169c9373200
+uuid: 06287bf6-72ff-472c-b50d-99a6a6de7938
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_network
+    - field.storage.paragraph.field_facebook
     - paragraphs.paragraphs_type.social_networks
-  module:
-    - options
-id: paragraph.social_networks.field_network
-field_name: field_network
+id: paragraph.social_networks.field_facebook
+field_name: field_facebook
 entity_type: paragraph
 bundle: social_networks
-label: Network
+label: Facebook
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: list_string
+field_type: string

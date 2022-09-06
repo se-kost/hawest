@@ -1,17 +1,30 @@
-uuid: 3770d41c-25ed-408e-bad8-fa9f698c7e93
+uuid: 4e468072-572c-451f-881b-4c3ec5600c7d
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - taxonomy
+    - options
 id: node.field_position
 field_name: field_position
 entity_type: node
-type: entity_reference
+type: list_string
 settings:
-  target_type: taxonomy_term
-module: core
+  allowed_values:
+    -
+      value: GK
+      label: Goalkeeper
+    -
+      value: DF
+      label: Defender
+    -
+      value: MD
+      label: Midfielder
+    -
+      value: FW
+      label: Forward
+  allowed_values_function: ''
+module: options
 locked: false
 cardinality: -1
 translatable: true

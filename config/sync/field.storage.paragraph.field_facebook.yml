@@ -1,11 +1,11 @@
-uuid: bf6fef04-4760-4a42-97ed-93fd13565594
+uuid: 5fad6a47-ac9f-424d-8447-524c967aebcb
 langcode: en
 status: true
 dependencies:
   module:
     - paragraphs
-id: paragraph.field_value
-field_name: field_value
+id: paragraph.field_facebook
+field_name: field_facebook
 entity_type: paragraph
 type: string
 settings:

@@ -1,3 +1,5 @@
+@import "../base/mixins";
+
 .player-full-information {
   .player-header {
     text-align: center;
@@ -21,6 +23,57 @@
 
     .right-column {
       width: 100%;
+      .player-info-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 0 18px;
+
+        > div:not(:last-child) {
+          flex: 0 0 50%;
+          display: flex;
+          align-items: center;
+          margin: 10px 0;
+          font-size: 20px;
+          font-weight: bold;
+        }
+
+        .player-birthday {
+          &:before {
+           @include player-info-icon(url('../images/birthday.svg'));
+          }
+        }
+
+        .player-position {
+          &:before {
+            @include player-info-icon(url('../images/position.svg'));
+          }
+        }
+
+        .player-weight {
+          &:before {
+            @include player-info-icon(url('../images/weight.svg'));
+          }
+        }
+
+        .player-height {
+          &:before {
+            @include player-info-icon(url('../images/height.svg'));
+          }
+        }
+
+        .player-number {
+          position: absolute;
+          font-size: 300px!important;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          color: var(--primary-color);
+          z-index: -1;
+          opacity: 0.3;
+          margin: 0!important;
+        }
+      }
     }
   }
 }

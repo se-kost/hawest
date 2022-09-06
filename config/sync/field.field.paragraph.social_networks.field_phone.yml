@@ -1,15 +1,15 @@
-uuid: aa7c33af-4595-4259-9e72-7e3aeae18129
+uuid: aa947000-c36b-40ce-b976-9522c6560a63
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.paragraph.field_value
+    - field.storage.paragraph.field_phone
     - paragraphs.paragraphs_type.social_networks
-id: paragraph.social_networks.field_value
-field_name: field_value
+id: paragraph.social_networks.field_phone
+field_name: field_phone
 entity_type: paragraph
 bundle: social_networks
-label: Value
+label: Phone
 description: ''
 required: false
 translatable: false

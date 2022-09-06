@@ -1,0 +1,8 @@
+uuid: a1b38d64-4ce7-4d8f-9268-1303fbfad9cd
+langcode: en
+status: true
+dependencies: {  }
+id: birthday
+label: Birthday
+locked: false
+pattern: d/m/Y

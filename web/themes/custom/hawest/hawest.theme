@@ -1,0 +1,39 @@
+<?php
+
+use Drupal\taxonomy\Entity\Term;
+
+function hawest_preprocess_node(&$variables) {
+  $node = $variables['node'];
+  if ($node->bundle() === 'players'){
+    if ($node->hasField('field_position') && !$node->get('field_position')->isEmpty()) {
+      $values = $node->get('field_position')->getValue();
+      $positions = [];
+      foreach ($values as $value){
+        $positions[] = $value['value'];
+      }
+
+      $variables['position'] = implode(', ', $positions);
+    }
+  }
+}
+
+function hawest_preprocess_paragraph(&$variables) {
+  $paragraph = $variables['paragraph'];
+  if ($paragraph->bundle() === 'social_networks') {
+    if ($paragraph->hasField('field_instagram') && !$paragraph->get('field_instagram')->isEmpty()) {
+      $variables['instagram'] = $paragraph->get('field_instagram')->getString();
+    }
+    if ($paragraph->hasField('field_facebook') && !$paragraph->get('field_facebook')->isEmpty()) {
+      $variables['facebook'] = $paragraph->get('field_facebook')->getString();
+    }
+    if ($paragraph->hasField('field_telegram') && !$paragraph->get('field_telegram')->isEmpty()) {
+      $variables['telegram'] = $paragraph->get('field_telegram')->getString();
+    }
+    if ($paragraph->hasField('field_phone') && !$paragraph->get('field_phone')->isEmpty()) {
+      $variables['phone'] = $paragraph->get('field_phone')->getString();
+    }
+
+  }
+
+
+}

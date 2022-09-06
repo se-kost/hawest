@@ -18,6 +18,7 @@ dependencies:
     - datetime
     - entity_reference_revisions
     - media
+    - options
     - text
     - user
 id: node.players.default
@@ -37,9 +38,9 @@ content:
     label: hidden
     settings:
       timezone_override: ''
-      format_type: olivero_medium
+      format_type: birthday
     third_party_settings: {  }
-    weight: 2
+    weight: 3
     region: content
   field_height:
     type: number_integer
@@ -80,12 +81,11 @@ content:
     weight: 5
     region: content
   field_position:
-    type: entity_reference_label
+    type: list_key
     label: hidden
-    settings:
-      link: false
+    settings: {  }
     third_party_settings: {  }
-    weight: 3
+    weight: 2
     region: content
   field_social_networks:
     type: entity_reference_revisions_entity_view

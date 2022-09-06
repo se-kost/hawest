@@ -1,0 +1,19 @@
+uuid: 92310b13-5af5-495c-a58e-3441067834b0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_telegram
+    - paragraphs.paragraphs_type.social_networks
+id: paragraph.social_networks.field_telegram
+field_name: field_telegram
+entity_type: paragraph
+bundle: social_networks
+label: Telegram
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

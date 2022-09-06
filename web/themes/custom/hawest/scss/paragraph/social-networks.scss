@@ -1,0 +1,31 @@
+@import "../base/mixins";
+.paragraph--type--social-networks {
+  display: flex;
+  padding: 32px 0;
+  margin: 0 -10px;
+
+  .social-icon {
+    font-size: 0;
+    &.player-instagram {
+      a {
+        @include social-networks-icon(url('../images/instagram.svg'));
+      }
+
+    }
+    &.player-facebook {
+      a {
+        @include social-networks-icon(url('../images/facebook.svg'));
+      }
+    }
+    &.player-telegram {
+      a {
+        @include social-networks-icon(url('../images/telegram.svg'));
+      }
+    }
+    &.player-phone {
+      a {
+        @include social-networks-icon(url('../images/phone.svg'));
+      }
+    }
+  }
+}

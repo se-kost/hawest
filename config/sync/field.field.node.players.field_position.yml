@@ -1,11 +1,12 @@
-uuid: ccc3c75b-f22c-46e2-8835-5f882c35436b
+uuid: 2d88b505-a21e-4ccf-9a5e-067c99d861fc
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_position
     - node.type.players
-    - taxonomy.vocabulary.position
+  module:
+    - options
 id: node.players.field_position
 field_name: field_position
 entity_type: node
@@ -16,14 +17,5 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:taxonomy_term'
-  handler_settings:
-    target_bundles:
-      position: position
-    sort:
-      field: name
-      direction: asc
-    auto_create: false
-    auto_create_bundle: ''
-field_type: entity_reference
+settings: {  }
+field_type: list_string

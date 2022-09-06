@@ -1,0 +1,22 @@
+@mixin player-info-icon($image) {
+  content: '';
+  background-image: $image;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  display: block;
+  margin-right: 10px;
+}
+
+@mixin social-networks-icon($icon) {
+  background-image: $icon;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  display: block;
+  margin: 0 10px;
+}

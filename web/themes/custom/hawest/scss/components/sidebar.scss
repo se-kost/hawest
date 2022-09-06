@@ -1,10 +1,7 @@
 @import "scss/base/variables";
 
 aside {
-  //background: linear-gradient(45deg, var(--white), var(--white) 25%, var(--primary-color) 25%, var(--primary-color));
-  //background: linear-gradient(-10deg, var(--primary-color), var(--primary-color) 60%, var(--white) 60%, var(--white));
   background: linear-gradient(-10deg,var(--primary-color),var(--primary-color) 70vh,var(--white) 100vh,var(--white));
-  //background: var(--primary-color);
 
   &:after {
     content: '';

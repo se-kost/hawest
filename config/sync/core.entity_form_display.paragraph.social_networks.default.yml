@@ -3,23 +3,43 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.social_networks.field_network
-    - field.field.paragraph.social_networks.field_value
+    - field.field.paragraph.social_networks.field_facebook
+    - field.field.paragraph.social_networks.field_instagram
+    - field.field.paragraph.social_networks.field_phone
+    - field.field.paragraph.social_networks.field_telegram
     - paragraphs.paragraphs_type.social_networks
 id: paragraph.social_networks.default
 targetEntityType: paragraph
 bundle: social_networks
 mode: default
 content:
-  field_network:
-    type: options_select
-    weight: 0
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_value:
+  field_facebook:
     type: string_textfield
     weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_instagram:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: string_textfield
+    weight: 3
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_telegram:
+    type: string_textfield
+    weight: 2
     region: content
     settings:
       size: 60
